@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  padding:0px;
+  margin:0px;
+}
+
+#header{
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center;
+  position:fixed;
+  top:0px;
+  height:20vh;
+  padding-top:20px;
+  padding-bottom:30px;
+  width:100vw;
+  font-family: "Birthstone", cursive;
+  color:white;
+background-color: transparent;
+z-index:20;
+  
+  
+}
+
+#hrt{
+  height: 50px;
+  fill:aqua;
+}
+
+#wrapper{
+  background-color: #070802;
+  background-size:100%;
+  background-position:center;
+  background-attachment: fixed;
+  height:100%;
+  
+
+}
+
+#article{
+  width:80vw;
+   
+  margin:auto;
+  margin-top:-100px;
+  margin-bottom:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+#block{
+  width:50vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:50px 0;
+
+}
+#div{
+  width:50%;
+  margin-top:50px;
+  font-size:30px;
+  
+  color:white;
+  font-weight:bold;
+  letter-spacing: 1px;
+  padding:0px 50px;
+
+}
+
+#zoom{
+
+ 
+ overflow: hidden;
+  perspective: 1000px;
+  z-index: -1;
+  height:100vh;
+  top:0px;
+  background-image: url("bg.jpg");
+    position:relative;
+    
+
+  
+}
+
+#img1{
+  height:110%;
+  width:100vw;
+  position:sticky;
+ top:0px;
+ left:0px;
+}
+
+#gradient{
+  
+
+
+  height:200px;
+  position:fixed;
+  bottom:0px;
+  width:100vw;
+  z-index:19;
+}
+
+.scrolled{
+background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, transparent);
+-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: background-color 3s;
+}
+
+#article img{
+  width:200px;
+  height:200px;
+  padding:10px 10px 0px 10px;
+}
+
+#polaroid{
+  background-color:white;
+  text-align: center;
+  
+}
+
+p{
+  padding:25px 0px;
+font-family: "Birthstone", cursive;
+font-size:30px;
+}
+
+#per{height:16px !important;
+width:16px !important;
+padding:2px !important;
+}
+
+.one{
+  transform: rotate(20deg);
+}
+
+
+.two{
+  transform: rotate(-20deg);
+}
+
+
+.three{
+  transform: rotate(20deg);
+}
+
+
+.four{
+  transform: rotate(-20deg);
+}
+
+.a{
+  text-align: right !important;
+}
+
+.c{
+  text-align: right !important;
+}
+
+#footer{
+  font-size:50px;
+  color:white;
+  font-weight:bold;
+  background-image: url("bg.jpg");
+  width:100vw;
+
+  height:80vh;
+  text-align:center;
+  position:relative;
+  vertical-align: middle;
+  display: inline-block;
+  line-height:200px;
+}
+
+#footer p{
+  
+  margin:auto;
+
+  font-size:150px;
+}
+
+#footer img{
+  
+ 
+
+  height:120px;
+  width:120px;
+  padding-left:60px;
+ 
+}
+
