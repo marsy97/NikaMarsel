@@ -197,3 +197,24 @@ padding:2px !important;
  
 }
 
+#counter{
+  display:flex;
+  justify-content: center;
+flex-direction: row;  
+color:white;
+  width:100vw;
+}
+
+#counter p{
+  padding:50px 30px;
+  font-size:50px;
+}
+
+#broj{
+  font-weight: bold;
+}
+
+.player{
+  width:30%;
+  height:200px;
+}

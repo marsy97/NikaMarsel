@@ -11,10 +11,26 @@ import img1 from "./img/1.jpg";
 import img2 from "./img/2.jpg";
 import img3 from "./img/3.jpg";
 import img4 from "./img/4.jpg";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 
 
+const Player = () => (
+  <AudioPlayer
+    
+    src="https://proud-harlequin-tl4td4nb.edgeone.dev/tiija.mp3"
+    onPlay={e => console.log("onPlay")}
+    />
+);
 
+const Playertwo = () => (
+  <AudioPlayer
+    
+    src="https://shallow-harlequin-ru6vkrda.edgeone.dev/Predrag%20Cune%20Gojkovic%20-%20Kafu%20mi%20draga%20ispeci%20-%20(Audio%202002).mp3"
+    onPlay={e => console.log("onPlay")}
+    />
+);
  
 gsap.registerPlugin(ScrollTrigger);
 function LandingPageScrollTrigger() {
@@ -57,6 +73,9 @@ let header = document.querySelector('.Header');
 
    });
   
+   const d=new Date();
+    let day = d.getDate(); 
+   
 
   return (
     <main id="main">    
@@ -66,9 +85,11 @@ let header = document.querySelector('.Header');
 
 
     <div id="wrapper">
-      <div className='Header' id="header">Nika <svg fill="red"  src={hrt}/> Marsel</div>
+      <div className='Header' id="header">Nika <img  src={hrt}/> Marsel</div>
         <article id="article">
-          
+
+          <div id="counter"><p>Dana zajedno:</p><p id="broj">{day+182}</p><p>...and counting...</p></div>
+          <div className="player"><Player/></div>
         <div id="block" className='a'>
            <div id="polaroid" className="one"><img src={img3}/><p>Percocet <img id="per"src={hrt}/></p></div>
           <div id="div">Draga Nika,<br/><br/>Došli smo do naše polu-godišnjice. Od prvog puta kada sam procitao tvoju objavu, osjetio sam kao da me nešto jako snažno privlači prema tebi, nešto poput crne rupe... I kao crna rupa, dok sam s tobom,osjećam vrijeme kao da stane.Tako i ovih 6 mjeseci mi djeluje kao milisekunda u vremenu.</div>
@@ -93,6 +114,7 @@ let header = document.querySelector('.Header');
 
          
       <footer id="footer"><p>VOLIM TE<img src={hrt}/></p></footer>
+      <div className="player"><Playertwo/></div>
         </article>
   </div>  
     
